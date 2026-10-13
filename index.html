@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Garcia | Desenvolvedor de Sistemas & Automação</title>
+  <meta name="description" content="Portfólio de Nicolas Miguel Gomes Garcia — estudante de Engenharia de Software e desenvolvedor de sistemas SaaS, automações, aplicações web e desktop (TypeScript, PHP, C#, Python, SQL)." />
+  <meta name="keywords" content="Nicolas Garcia, Desenvolvedor, Engenharia de Software, SaaS, Automação, TypeScript, PHP, C#, Python, MySQL, PostgreSQL, Rio de Janeiro" />
+  <meta name="author" content="Nicolas Miguel Gomes Garcia" />
+  <meta name="theme-color" content="#060b18" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nicolas Garcia | Desenvolvedor de Sistemas & Automação" />
+  <meta property="og:description" content="Projetos SaaS, automações e sistemas web/desktop desenvolvidos por Nicolas Garcia." />
+  <meta property="og:image" content="assets/img/perfil.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%233b82f6'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='url(%23g)'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='800' font-size='28' fill='white'>NG</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo" id="nav-logo">
+        <span class="nav__logo-mark">NG</span>
+        <span class="nav__logo-text">nicolas<span class="accent">.dev</span></span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Navegação principal">
+        <a href="#sobre" id="nav-sobre">Sobre</a>
+        <a href="#tecnologias" id="nav-tecnologias">Tecnologias</a>
+        <a href="#projetos" id="nav-projetos">Projetos</a>
+        <a href="#experiencia" id="nav-experiencia">Experiência</a>
+        <a href="#formacao" id="nav-formacao">Formação</a>
+        <a href="#contato" class="btn btn--small btn--primary" id="nav-contato">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge badge--status"><span class="pulse"></span> Disponível para estágio</span>
+          <h1 class="hero__title">
+            Olá, eu sou<br />
+            <span class="gradient-text">Nicolas Garcia</span>
+          </h1>
+          <p class="hero__role mono">
+            &gt; <span id="typed"></span><span class="caret">|</span>
+          </p>
+          <p class="hero__desc">
+            Estudante de Engenharia de Software apaixonado por transformar processos manuais em
+            sistemas inteligentes. Desenvolvo plataformas SaaS, automações e aplicações web e desktop
+            que resolvem problemas reais de negócios.
+          </p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary" id="hero-cta-projetos">
+              Ver projetos
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contato" class="btn btn--ghost" id="hero-cta-contato">Fale comigo</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/Nicolasmgg07" target="_blank" rel="noopener" aria-label="GitHub" id="hero-github">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolas-garcia-2a783839a" target="_blank" rel="noopener" aria-label="LinkedIn" id="hero-linkedin">
+              <i class="devicon-linkedin-plain"></i>
+            </a>
+            <a href="mailto:nicolasmgg07@gmail.com" aria-label="E-mail" id="hero-email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </a>
+            <a href="https://wa.me/5521999456256" target="_blank" rel="noopener" aria-label="WhatsApp" id="hero-whatsapp">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.43 9.43 0 0 1-1.45-5.03c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.44-9.45 9.44zm8.04-17.49A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.7l6.1-1.6a11.33 11.33 0 0 0 5.37 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.04z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="photo">
+            <div class="photo__ring"></div>
+            <div class="photo__frame">
+              <img src="assets/img/perfil.jpg" alt="Foto de Nicolas Garcia" width="682" height="1024" />
+            </div>
+            <div class="float-card float-card--1">
+              <span class="float-card__icon">⚡</span>
+              <div><strong>6+</strong><small>Projetos entregues</small></div>
+            </div>
+            <div class="float-card float-card--2">
+              <span class="float-card__icon">🚀</span>
+              <div><strong>SaaS</strong><small>& Automação</small></div>
+            </div>
+            <div class="float-card float-card--3 mono">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <code>build: <span class="accent">success</span></code>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo" id="scroll-hint"><span></span></a>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag mono">01. sobre mim</span>
+          <h2 class="section__title">Quem sou eu</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Sou <strong>Nicolas Miguel Gomes Garcia</strong>, de Bangu, Rio de Janeiro. Estudante de
+              <strong>Engenharia de Software na Faculdade Infnet</strong> e Técnico em Informática,
+              tenho uma base sólida em lógica de programação, algoritmos, Python, SQL e bancos de dados.
+            </p>
+            <p>
+              Tenho experiência prática integrando módulos de sistemas e automatizando fluxos de trabalho —
+              como um <strong>sistema de PDV completo</strong> para uma empresa e uma
+              <strong>plataforma de pedidos em tempo real</strong> que conecta mesa, cozinha e administração.
+              Também desenvolvo produtos SaaS multiempresa com TypeScript e PostgreSQL.
+            </p>
+            <p>
+              Sou fascinado por <strong>Inteligência Artificial</strong>, LLMs e agentes de IA, e busco
+              oportunidades na área de <strong>Automação de Processos e TI</strong> para aprender
+              tecnologias como Power Platform e Azure e continuar crescendo.
+            </p>
+            <div class="about__chips">
+              <span class="chip">📍 Rio de Janeiro, RJ</span>
+              <span class="chip">🎓 Eng. de Software</span>
+              <span class="chip">🤖 IA & Automação</span>
+              <span class="chip">🏆 HACKTUDO 2026</span>
+            </div>
+          </div>
+          <div class="stats reveal">
+            <div class="stat card-spot">
+              <strong class="stat__num" data-count="6">0</strong><span>+</span>
+              <p>Projetos desenvolvidos</p>
+            </div>
+            <div class="stat card-spot">
+              <strong class="stat__num" data-count="10">0</strong><span>+</span>
+              <p>Tecnologias utilizadas</p>
+            </div>
+            <div class="stat card-spot">
+              <strong class="stat__num" data-count="3">0</strong>
+              <p>Plataformas SaaS no ar</p>
+            </div>
+            <div class="stat card-spot">
+              <strong class="stat__num" data-count="4">0</strong>
+              <p>Certificações</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIAS ============ -->
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag mono">02. stack</span>
+          <h2 class="section__title">Linguagens & Tecnologias</h2>
+          <p class="section__sub">Ferramentas que uso para tirar ideias do papel.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech card-spot reveal" style="--c:#3178c6"><i class="devicon-typescript-plain"></i><span>TypeScript</span></div>
+          <div class="tech card-spot reveal" style="--c:#f7df1e"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+          <div class="tech card-spot reveal" style="--c:#3776ab"><i class="devicon-python-plain"></i><span>Python</span></div>
+          <div class="tech card-spot reveal" style="--c:#a179dc"><i class="devicon-csharp-plain"></i><span>C#</span></div>
+          <div class="tech card-spot reveal" style="--c:#777bb4"><i class="devicon-php-plain"></i><span>PHP</span></div>
+          <div class="tech card-spot reveal" style="--c:#e34f26"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+          <div class="tech card-spot reveal" style="--c:#1572b6"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+          <div class="tech card-spot reveal" style="--c:#4479a1"><i class="devicon-mysql-original"></i><span>MySQL</span></div>
+          <div class="tech card-spot reveal" style="--c:#4169e1"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+          <div class="tech card-spot reveal" style="--c:#512bd4"><i class="devicon-dotnetcore-plain"></i><span>.NET</span></div>
+          <div class="tech card-spot reveal" style="--c:#f05032"><i class="devicon-git-plain"></i><span>Git</span></div>
+          <div class="tech card-spot reveal" style="--c:#e6edf3"><i class="devicon-github-original"></i><span>GitHub</span></div>
+        </div>
+
+        <div class="skills reveal">
+          <div class="skills__col card-spot">
+            <h3>💻 Técnicas</h3>
+            <ul>
+              <li>Lógica de Programação & Algoritmos</li>
+              <li>Fundamentos de Banco de Dados / SQL</li>
+              <li>Integração entre Sistemas & APIs</li>
+              <li>Arquitetura SaaS Multi-tenant</li>
+              <li>Noções de Inteligência Artificial</li>
+            </ul>
+          </div>
+          <div class="skills__col card-spot">
+            <h3>🤝 Comportamentais</h3>
+            <ul>
+              <li>Organização</li>
+              <li>Comunicação profissional</li>
+              <li>Trabalho em equipe</li>
+              <li>Levantamento de requisitos</li>
+              <li>Foco em resolver problemas reais</li>
+            </ul>
+          </div>
+          <div class="skills__col card-spot">
+            <h3>🌐 Idiomas</h3>
+            <ul>
+              <li>Português — Nativo</li>
+              <li>Inglês — Básico</li>
+            </ul>
+            <h3 class="mt">🎯 Interesses</h3>
+            <ul>
+              <li>LLMs & Agentes de IA</li>
+              <li>Power Platform & Azure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag mono">03. portfólio</span>
+          <h2 class="section__title">Projetos em destaque</h2>
+          <p class="section__sub">Sistemas reais, em produção, resolvendo problemas de verdade.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist" aria-label="Filtrar projetos">
+          <button class="filter is-active" data-filter="all" id="filter-all">Todos</button>
+          <button class="filter" data-filter="saas" id="filter-saas">SaaS</button>
+          <button class="filter" data-filter="web" id="filter-web">Web</button>
+          <button class="filter" data-filter="desktop" id="filter-desktop">Desktop</button>
+        </div>
+
+        <div class="projects">
+          <!-- NextFlowChat -->
+          <article class="project card-spot reveal" data-cat="saas">
+            <div class="project__top">
+              <span class="project__cat">💬 SaaS & Automação</span>
+              <span class="project__star">Destaque</span>
+            </div>
+            <h3 class="project__title">NextFlowChat</h3>
+            <p class="project__subtitle">SaaS de Atendimento e Automação via WhatsApp</p>
+            <p class="project__desc">
+              Plataforma SaaS multiempresa de automação e chatbot. Cada empresa possui ambiente
+              independente, com conexão via QR Code, gestão de contatos e criação de fluxos automáticos
+              de mensagens personalizáveis, oferecendo atendimento via bot com transição inteligente para
+              atendentes humanos.
+            </p>
+            <ul class="tags">
+              <li>TypeScript</li><li>PostgreSQL</li><li>WhatsApp API</li><li>SaaS</li><li>Multi-tenant</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://nextflow.leenicorporation.com.br" target="_blank" rel="noopener" class="btn btn--primary btn--block" id="proj-nextflow">
+                Acessar sistema <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- NextFinances -->
+          <article class="project card-spot reveal" data-cat="saas">
+            <div class="project__top">
+              <span class="project__cat">💰 Fintech & IA</span>
+              <span class="project__star">Destaque</span>
+            </div>
+            <h3 class="project__title">NextFinances</h3>
+            <p class="project__subtitle">Controle Financeiro Inteligente com IA</p>
+            <p class="project__desc">
+              Plataforma de gestão financeira por assinatura (mensal/anual) que dá ao usuário controle
+              total sobre suas finanças com apoio de Inteligência Artificial. Integração completa com a
+              API do Mercado Pago para assinaturas e ambiente seguro para projeções e organização de
+              receitas, despesas e metas.
+            </p>
+            <ul class="tags">
+              <li>TypeScript</li><li>PostgreSQL</li><li>Mercado Pago</li><li>IA</li><li>SaaS</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://nextfinances.leenicorporation.com.br" target="_blank" rel="noopener" class="btn btn--primary btn--block" id="proj-nextfinances">
+                Acessar sistema <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- NextTask -->
+          <article class="project card-spot reveal" data-cat="saas">
+            <div class="project__top">
+              <span class="project__cat">✅ Produtividade</span>
+              <span class="project__star">Destaque</span>
+            </div>
+            <h3 class="project__title">NextTask</h3>
+            <p class="project__subtitle">Gerenciamento de Tarefas e Produtividade</p>
+            <p class="project__desc">
+              Plataforma web para organizar tarefas e projetos de forma simples e visual. Conta com
+              autenticação de usuários, criação e acompanhamento de tarefas por status e prioridade,
+              ajudando pessoas e equipes a manterem o foco e a produtividade no dia a dia.
+            </p>
+            <ul class="tags">
+              <li>TypeScript</li><li>Web App</li><li>Autenticação</li><li>Produtividade</li>
+            </ul>
+            <div class="project__actions">
+              <a href="https://nextaskleenicorporation.vercel.app/login" target="_blank" rel="noopener" class="btn btn--primary btn--block" id="proj-nexttask">
+                Acessar sistema <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- NextHelp -->
+          <article class="project card-spot reveal" data-cat="saas">
+            <div class="project__top">
+              <span class="project__cat">🛠️ Suporte & Gestão</span>
+            </div>
+            <h3 class="project__title">NextHelp</h3>
+            <p class="project__subtitle">Sistema de Gerenciamento de Chamados</p>
+            <p class="project__desc">
+              Plataforma web corporativa de helpdesk criada para organizar e centralizar solicitações de
+              suporte de TI. Autenticação refinada por níveis de acesso (administradores, solicitantes e
+              atendentes) e identificador único por chamado, facilitando o acompanhamento do ciclo de
+              atendimento da abertura até a resolução.
+            </p>
+            <ul class="tags">
+              <li>Web App</li><li>Gestão de TI</li><li>Helpdesk</li><li>Autenticação</li><li>Workflow</li>
+            </ul>
+            <div class="project__actions">
+              <span class="btn btn--ghost btn--block btn--disabled" id="proj-nexthelp">Link em breve</span>
+            </div>
+          </article>
+
+          <!-- Bifão -->
+          <article class="project card-spot reveal" data-cat="web">
+            <div class="project__top">
+              <span class="project__cat">🍔 Food Service</span>
+              <span class="project__star">Destaque</span>
+            </div>
+            <h3 class="project__title">Bifão — Cardápio Digital</h3>
+            <p class="project__subtitle">Pedidos em Tempo Real</p>
+            <p class="project__desc">
+              Criado para agilizar o atendimento e melhorar a gestão: os pedidos são enviados
+              automaticamente entre mesa, cozinha e administração, evitando erros e reduzindo o tempo.
+              Área administrativa completa com dashboard financeiro, controle de produtos, acompanhamento
+              de pedidos, módulos separados e layout moderno e responsivo.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Tempo real</li>
+            </ul>
+            <div class="project__actions project__actions--split">
+              <span class="btn btn--ghost btn--disabled" id="proj-bifao-site">Domínio em breve</span>
+              <a href="https://github.com/Nicolasmgg07/Site-de-Card-pio-Digital" target="_blank" rel="noopener" class="btn btn--ghost" id="proj-bifao-repo">
+                <i class="devicon-github-original"></i> Código
+              </a>
+            </div>
+          </article>
+
+          <!-- Sistema de Vendas -->
+          <article class="project card-spot reveal" data-cat="desktop">
+            <div class="project__top">
+              <span class="project__cat">🖥️ Desktop & Gestão</span>
+              <span class="project__badge">Freelance</span>
+            </div>
+            <h3 class="project__title">Sistema de Vendas e Gerenciamento</h3>
+            <p class="project__subtitle">PDV completo para o dia a dia de qualquer negócio</p>
+            <p class="project__desc">
+              Controle de estoque, registro de vendas, gestão financeira, relatórios automáticos, cadastro
+              de produtos e leitura de código de barras. Rapidez, precisão e eficiência com uma interface
+              simples e intuitiva. Aplicação executada localmente no cliente.
+            </p>
+            <ul class="tags">
+              <li>C#</li><li>.NET</li><li>MySQL</li><li>SQL</li><li>Código de barras</li>
+            </ul>
+            <div class="project__actions project__actions--split">
+              <span class="btn btn--ghost btn--disabled" id="proj-pdv-local">Aplicação local</span>
+              <a href="https://github.com/Nicolasmgg07/SistemaEstoqueVendas" target="_blank" rel="noopener" class="btn btn--ghost" id="proj-pdv-repo">
+                <i class="devicon-github-original"></i> Código
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIÊNCIA ============ -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag mono">04. carreira</span>
+          <h2 class="section__title">Experiência</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card card-spot">
+              <div class="tl-head">
+                <div>
+                  <h3>Desenvolvedor de Sistemas</h3>
+                  <p class="tl-company">Freelancer — Prestação de serviço para empresa</p>
+                </div>
+                <span class="tl-date mono">2025</span>
+              </div>
+              <ul>
+                <li>Ofereci meus serviços de desenvolvimento de software a uma empresa, que contratou a solução sob demanda.</li>
+                <li>Projetei e implementei um sistema de vendas (PDV) completo, do levantamento de requisitos à entrega, com banco de dados relacional e rotinas em SQL.</li>
+                <li>Desenvolvi módulos integrados de controle de estoque, relatórios financeiros e leitura de código de barras, automatizando processos antes manuais.</li>
+              </ul>
+              <ul class="tags"><li>C#</li><li>MySQL</li><li>SQL</li></ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card card-spot">
+              <div class="tl-head">
+                <div>
+                  <h3>Auxiliar Administrativo</h3>
+                  <p class="tl-company">CredLink</p>
+                </div>
+                <span class="tl-date mono">2026 · 3 meses</span>
+              </div>
+              <ul>
+                <li>Prestei assessoria direta ao presidente da empresa, com organização e controle de documentos e informações.</li>
+                <li>Apoio à comunicação interna e a demandas estratégicas.</li>
+                <li>Migrei de carreira para a área de Tecnologia da Informação ao final do período.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot tl-dot--accent"></div>
+            <div class="tl-card card-spot">
+              <div class="tl-head">
+                <div>
+                  <h3>Hackathon HACKTUDO 2026</h3>
+                  <p class="tl-company">Participante confirmado</p>
+                </div>
+                <span class="tl-date mono">Set/2026</span>
+              </div>
+              <ul>
+                <li>Equipe formada para desenvolver uma solução tecnológica voltada à educação.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMAÇÃO ============ -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag mono">05. educação</span>
+          <h2 class="section__title">Formação & Certificações</h2>
+        </div>
+
+        <div class="edu">
+          <div class="edu__col">
+            <h3 class="edu__label">🎓 Formação acadêmica</h3>
+            <div class="edu-card card-spot reveal">
+              <span class="edu-card__status edu-card__status--live">Cursando</span>
+              <h4>Engenharia de Software</h4>
+              <p>Faculdade Infnet</p>
+              <small class="mono">Conclusão prevista: Jun/2030</small>
+            </div>
+            <div class="edu-card card-spot reveal">
+              <span class="edu-card__status">Concluído</span>
+              <h4>Técnico em Informática</h4>
+              <p>Colégio João Paulo I</p>
+              <small class="mono">Dez/2025</small>
+            </div>
+            <div class="edu-card card-spot reveal">
+              <span class="edu-card__status">Concluído</span>
+              <h4>Ensino Médio</h4>
+              <p>Colégio João Paulo I</p>
+              <small class="mono">Dez/2025</small>
+            </div>
+          </div>
+
+          <div class="edu__col">
+            <h3 class="edu__label">📜 Cursos & Certificações</h3>
+            <div class="cert card-spot reveal">
+              <span class="cert__icon">🤖</span>
+              <div><h4>Introdução à Inteligência Artificial</h4><p>LinkedIn · 2025</p></div>
+            </div>
+            <div class="cert card-spot reveal">
+              <span class="cert__icon">🗄️</span>
+              <div><h4>Fundamentos de Programação: Banco de Dados</h4><p>LinkedIn · 2025</p></div>
+            </div>
+            <div class="cert card-spot reveal">
+              <span class="cert__icon">🔒</span>
+              <div><h4>Conformidade com a LGPD</h4><p>LinkedIn · 2025</p></div>
+            </div>
+            <div class="cert card-spot reveal">
+              <span class="cert__icon">🌿</span>
+              <div><h4>Certificação Git e GitHub</h4><p>Hashtag Treinamentos · 2025</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact card-spot reveal">
+          <span class="section__tag mono">06. contato</span>
+          <h2 class="contact__title">Vamos construir algo <span class="gradient-text">juntos?</span></h2>
+          <p class="contact__sub">
+            Estou em busca de oportunidades de estágio em Automação de Processos e TI, e aberto a
+            projetos freelance. Me mande uma mensagem!
+          </p>
+          <div class="contact__grid">
+            <a href="mailto:nicolasmgg07@gmail.com" class="contact__item" id="contact-email">
+              <span class="contact__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <div><small>E-mail</small><strong>nicolasmgg07@gmail.com</strong></div>
+            </a>
+            <a href="https://wa.me/5521999456256" target="_blank" rel="noopener" class="contact__item" id="contact-whatsapp">
+              <span class="contact__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><small>WhatsApp</small><strong>(21) 99945-6256</strong></div>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolas-garcia-2a783839a" target="_blank" rel="noopener" class="contact__item" id="contact-linkedin">
+              <span class="contact__icon"><i class="devicon-linkedin-plain"></i></span>
+              <div><small>LinkedIn</small><strong>Nicolas Garcia</strong></div>
+            </a>
+            <a href="https://github.com/Nicolasmgg07" target="_blank" rel="noopener" class="contact__item" id="contact-github">
+              <span class="contact__icon"><i class="devicon-github-original"></i></span>
+              <div><small>GitHub</small><strong>@Nicolasmgg07</strong></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Nicolas Miguel Gomes Garcia. Feito com 💙 e muito café.</p>
+      <a href="#inicio" class="footer__top" id="back-to-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
