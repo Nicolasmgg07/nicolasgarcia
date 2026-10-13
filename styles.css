@@ -33,9 +33,21 @@ body {
   font-family: var(--font);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.7;
+  letter-spacing: 0.012em;
+  word-spacing: 0.08em;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+p {
+  line-height: 1.75;
+  letter-spacing: 0.012em;
+  word-spacing: 0.08em;
+}
+h1, h2, h3, h4, h5, h6 {
+  word-spacing: 0.06em;
+  letter-spacing: 0;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -159,13 +171,16 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 130px 0 90px; position: relative; }
 .hero__inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px; align-items: center; }
 .hero__title {
-  font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.05; font-weight: 800;
-  letter-spacing: -0.03em; margin: 22px 0 18px;
+  font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.1; font-weight: 800;
+  letter-spacing: -0.005em; word-spacing: 0.12em; margin: 22px 0 18px;
 }
-.hero__role { font-size: clamp(1rem, 2vw, 1.25rem); color: var(--cyan); margin-bottom: 22px; min-height: 1.6em; }
+.hero__role { font-size: clamp(1rem, 2vw, 1.25rem); color: var(--cyan); margin-bottom: 22px; min-height: 1.6em; word-spacing: 0.08em; }
 .caret { animation: blink 1s steps(1) infinite; color: var(--cyan); margin-left: 2px; }
 @keyframes blink { 50% { opacity: 0; } }
-.hero__desc { color: var(--muted); font-size: 1.08rem; max-width: 560px; margin-bottom: 34px; }
+.hero__desc {
+  color: var(--muted); font-size: 1.08rem; max-width: 560px; margin-bottom: 34px;
+  line-height: 1.8; letter-spacing: 0.012em; word-spacing: 0.1em;
+}
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 38px; }
 .hero__socials { display: flex; gap: 12px; }
 .hero__socials a {
@@ -228,12 +243,15 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .section { padding: 110px 0; position: relative; }
 .section__head { margin-bottom: 56px; }
 .section__tag { color: var(--cyan); font-size: 0.88rem; display: inline-block; margin-bottom: 10px; }
-.section__title { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.section__title {
+  font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 800;
+  letter-spacing: 0; word-spacing: 0.08em; line-height: 1.25;
+}
 .section__title::after {
   content: ""; display: block; width: 64px; height: 4px; border-radius: 4px;
   background: var(--grad); margin-top: 16px;
 }
-.section__sub { color: var(--muted); margin-top: 14px; font-size: 1.05rem; }
+.section__sub { color: var(--muted); margin-top: 14px; font-size: 1.05rem; letter-spacing: 0.01em; word-spacing: 0.08em; }
 
 /* Spotlight card base */
 .card-spot {
@@ -250,8 +268,14 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 
 /* About */
 .about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: start; }
-.about__text p { color: var(--muted); font-size: 1.05rem; margin-bottom: 18px; }
-.about__text strong { color: var(--text); font-weight: 600; }
+.about__text p {
+  color: var(--muted); font-size: 1.05rem; margin-bottom: 22px;
+  line-height: 1.85; letter-spacing: 0.015em; word-spacing: 0.14em;
+}
+.about__text strong {
+  color: var(--text); font-weight: 600;
+  letter-spacing: 0.012em;
+}
 .about__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 .chip {
   padding: 8px 14px; border-radius: 999px; font-size: .86rem; font-weight: 500;
@@ -314,9 +338,12 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   color: var(--gold); background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.3);
 }
 .project__badge { color: #c4b5fd; background: rgba(139,92,246,.1); border-color: rgba(139,92,246,.35); }
-.project__title { font-size: 1.4rem; font-weight: 700; line-height: 1.25; }
-.project__subtitle { color: #93c5fd; font-weight: 500; font-size: .95rem; margin: 4px 0 14px; }
-.project__desc { color: var(--muted); font-size: .94rem; margin-bottom: 20px; flex: 1; }
+.project__title { font-size: 1.4rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.005em; word-spacing: 0.06em; }
+.project__subtitle { color: #93c5fd; font-weight: 500; font-size: .95rem; margin: 4px 0 14px; letter-spacing: 0.01em; word-spacing: 0.06em; }
+.project__desc {
+  color: var(--muted); font-size: .94rem; margin-bottom: 20px; flex: 1;
+  line-height: 1.75; letter-spacing: 0.012em; word-spacing: 0.08em;
+}
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
 .tags li {
   font-family: var(--mono); font-size: .76rem; padding: 5px 10px; border-radius: 8px;
@@ -375,8 +402,14 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 /* Contact */
 .contact { padding: 64px 48px; text-align: center; background:
   radial-gradient(ellipse at top, rgba(59,130,246,.18), transparent 60%), var(--surface); }
-.contact__title { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
-.contact__sub { color: var(--muted); max-width: 580px; margin: 18px auto 40px; font-size: 1.05rem; }
+.contact__title {
+  font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800;
+  letter-spacing: 0; word-spacing: 0.08em; line-height: 1.25;
+}
+.contact__sub {
+  color: var(--muted); max-width: 580px; margin: 18px auto 40px; font-size: 1.05rem;
+  line-height: 1.75; letter-spacing: 0.012em; word-spacing: 0.08em;
+}
 .contact__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; text-align: left; }
 .contact__item {
   display: flex; align-items: center; gap: 14px; padding: 18px; border-radius: 14px;
